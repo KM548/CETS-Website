@@ -1,0 +1,44 @@
+.chapter7-page {
+    max-width: 1000px;
+    min-height: 60vh;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.chapter7-page h1 {
+    margin-bottom: 15px;
+    color: var(--maroon-dark);
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.chapter7-page > p {
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.chapter7-open-link {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: var(--maroon);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.chapter7-open-link:hover,
+.chapter7-open-link:focus-visible {
+    background: var(--maroon-dark);
+    outline: 2px solid var(--maroon-dark);
+    outline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+    .chapter7-page {
+        min-height: 55vh;
+        padding: 40px 16px;
+    }
+}
